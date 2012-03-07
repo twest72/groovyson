@@ -1,1 +1,9 @@
-This file was created by IntelliJ IDEA 11.0.2 for binding GitHub repository
+gson provided JSON methods on POGOs:
+
+ String toJsonString() { ... }
+
+ Map toJsonMap() { ... }
+
+ static def newInstanceFromJsonString(String json) { ... }
+
+ static def newInstanceFromJsonMap(Map map) { ... }

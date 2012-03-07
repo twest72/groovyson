@@ -40,6 +40,7 @@ class JsonSupportTransformationTest {
 
     @Test
     public void testBeanToJsonAndBackToBean() {
+
         Book bookBean = new Book(MAP_FOR_CREATE)
         String jsonBook = bookBean.toJsonString()
         Book bookBean2 = Book.newInstanceFromJsonString(jsonBook)
@@ -49,6 +50,7 @@ class JsonSupportTransformationTest {
 
     @Test
     public void testBeanToMapAndBackToBean() {
+
         Book bookBean = new Book(MAP_FOR_CREATE)
         Map jsonBook = bookBean.toJsonMap()
         Book bookBean2 = Book.newInstanceFromJsonMap(jsonBook)

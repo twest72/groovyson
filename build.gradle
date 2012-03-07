@@ -1,0 +1,17 @@
+
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+repositories {
+	mavenCentral()
+	//mavenLocal()
+}
+
+dependencies {
+	groovy group: 'org.codehaus.groovy', name: 'groovy', version: '2.0.0-beta-2'
+//    compile group:  'commons-cli', name: 'commons-cli', version: '1.2'
+//    compile group: 'org.codehaus.gpars', name: 'gpars', version: '0.12'
+	testCompile group: 'junit', name: 'junit', version: '4.10'
+}

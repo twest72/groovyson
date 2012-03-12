@@ -76,26 +76,23 @@ class JsonSupportTransformation implements ASTTransformation {
          class ${classNode.nameWithoutPackage} {
 
              String toJsonString() {
-                return JsonConverter.toJsonString(this)
+                return  de.aonnet.json.JsonConverter.toJsonString(this)
              }
 
              Map toJsonMap() {
-                return JsonConverter.toJsonMap(this)
+                return  de.aonnet.json.JsonConverter.toJsonMap(this)
              }
 
              static def newInstanceFromJsonString(String json) {
-                 return JsonConverter.newInstanceFromJsonString(json)
+                 return  de.aonnet.json.JsonConverter.newInstanceFromJsonString(json)
              }
 
              static def newInstanceFromJsonMap(Map map) {
-                 return JsonConverter.newInstanceFromJsonMap(map)
+                 return  de.aonnet.json.JsonConverter.newInstanceFromJsonMap(map)
              }
          }
          """)
 
-        classNode.addMethod(ast[1].methods[0])
-        classNode.addMethod(ast[1].methods[1])
-        classNode.addMethod(ast[1].methods[2])
-        classNode.addMethod(ast[1].methods[3])
+        ast[1].methods.each { classNode.addMethod(it) }
     }
 }

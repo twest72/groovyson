@@ -1,4 +1,4 @@
-gson provided JSON methods on POGOs:
+groovyson provided JSON methods on POGOs:
 
  String toJsonString() { ... }
 

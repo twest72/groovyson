@@ -63,7 +63,7 @@ class JsonSupportTransformationTest {
 
     @Test
     public void testMapToBean() {
-        assert  new Book(MAP_FOR_CREATE) == Book.newInstanceFromJsonMap(JSON_MAP)
+        assert new Book(MAP_FOR_CREATE) == Book.newInstanceFromJsonMap(JSON_MAP)
     }
 
     @Test

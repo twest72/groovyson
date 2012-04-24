@@ -30,6 +30,7 @@ package de.aonnet.json
 
 import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
+
 import java.lang.reflect.Field
 
 class JsonConverter {

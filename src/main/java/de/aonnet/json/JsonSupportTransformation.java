@@ -1,4 +1,3 @@
-package de.aonnet.json;
 /*
  * Copyright (c) 2012, Thomas Westphal
  * All rights reserved.
@@ -26,6 +25,8 @@ package de.aonnet.json;
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
+
+package de.aonnet.json;
 
 
 import org.codehaus.groovy.ast.ASTNode;

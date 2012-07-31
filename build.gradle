@@ -50,10 +50,20 @@ dependencies {
 }
 
 test {
-    // exclude test: today fails with gradle, works in idea
+    // exclude test: today fails with gradle (AST transformations), works in idea
     exclude '**/JsonSupportTransformationTest.class'
 }
 
+// custom tasks for creating source jar
+task sourcesJar(type: Jar, dependsOn:classes) {
+	classifier = 'sources'
+	from sourceSets.main.allSource
+}
+
+// add the jars as artifacts
+artifacts {
+	archives sourcesJar
+}
 
 uploadArchives {
     repositories {
@@ -72,4 +82,3 @@ uploadArchives {
 //        }
     }
 }
-
